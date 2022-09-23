@@ -1,9 +1,1 @@
-[[redirects]]
-from = “/*”
-to = “/index.html”
-status = 200
-[build]
-base="Portfolio/"
-publish="build-output/"
-command="echo 'default context'"
-[context.deploy-preview]
+
