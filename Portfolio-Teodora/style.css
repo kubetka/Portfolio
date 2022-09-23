@@ -1,0 +1,299 @@
+html
+{
+  background-color: black;
+}
+.containermain
+{
+  width: 100%;
+  min-width: 100vh;
+}
+/*Navigation*/
+.navbar
+{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.597);
+}
+nav
+{
+  flex: 1;
+  text-align: left;
+}
+nav ul li
+{
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a
+{
+  text-decoration: none;
+  color: #E97A69;
+  font-size: 20px;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  font-family:'Courier New', Courier, monospace;
+}
+nav ul li a:hover
+{
+  text-decoration: underline;
+  color: #E97A69;
+}
+.menu-icon
+{
+  cursor: pointer;
+  height: 30px;
+  width: auto;
+  display: none;
+}
+/*Footer*/
+.footer
+{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.672);
+  text-align: left;
+  width: 10.4vh;
+  font-size: 15px;
+  color: #E97A69;
+  left: 0.2vh;
+  right: 26vh;
+  bottom: 0;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+.rowmain
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+/*Column 1: Text*/
+.col-1
+{
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+  align-items: center;
+  text-align: center;
+}
+.col-1 .logo
+{
+  width: 20%;
+  padding-bottom: 20px;
+}
+.col-1 .line
+{
+  width: 80%;
+}
+.col-1 h1,h2
+{
+  color: #E97A69;
+  font-size: 3vw;
+  text-align: center;
+  line-height: 0.1px;
+  font-family: "whisper", sans-serif;
+  font-weight: 100;
+}
+/*Column 2: Me*/
+.col-2
+{
+  position: relative;
+  padding-left: 20vh;
+  flex-basis: 60%;
+  display: flex;
+  text-align: center;
+}
+.col-2 .me
+{
+  width:75%;
+  height: auto;
+  top: 0;
+}
+.col-2 .squares
+{
+  position: absolute;
+  top: 0;
+  width: 70%;
+  height: 105%;
+  z-index: -1;
+  animation-name: opacity;
+  animation-duration: 5s;
+}
+/*Animations*/
+@keyframes opacity
+{
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+@keyframes opacity2
+{
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+/*Social icons*/
+.insta
+{
+  height: 30px;
+  width: 30px;
+}
+.facebook
+{
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+}
+.containersocial
+{
+  height: 30px;
+  width: 90px;
+  float: right;
+  position: fixed;
+  right: 0;
+  top: 20px;
+}
+/*Buttons*/
+button
+{
+  color: #E97A69;
+  font-family:  Whisper, serif;
+  font-size: 3vh;
+  background-color: transparent;
+  border: 1px solid #E97A69;
+  cursor: pointer;
+  text-decoration:none;
+}
+.button:hover
+{
+  background-color: rgba(0, 0, 0, 0.396);
+  transform: scale(1.05);
+}
+/*Gallery*/
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0px;
+}
+.column 
+{
+  flex: 25%;
+  max-width: 23%;
+  padding: 0 4px;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+.column img
+{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+/*Responsive version*/
+@media screen and (max-width:900px)
+{
+  /*Responsive navigation*/
+  nav ul
+  {
+    width: 50%;
+    height: 120%;
+    background-color: #e97a6990;
+    position: fixed;
+    top: 40px;
+    z-index: -3;
+  }
+  nav ul li
+  {
+    display: block;
+    margin-top: 0.4vh;
+    margin-bottom: 0px;
+  }
+  nav ul li a
+  {
+    color: black;
+  }
+  .menu-icon
+  {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    width: 40px;
+    height: auto;
+  }
+  #menulist
+  {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .rowmain
+  {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+  /*Column 1- responsive*/
+  .col-1
+  {
+    text-align: center;
+    flex-basis: 100%;
+    padding-bottom: 100px;
+  }  
+  .col-1 .line
+  {
+    width: 80%;
+  }
+  .col-1 h1,h2
+  {
+    font-size: 40px;
+  }
+  /*Column 2- responsive*/
+  .col-2
+  {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .col-2 .me
+  {
+    width: 77%;
+  }
+  .col-2 .squares
+  {
+    width: 72%;
+  }
+  /*Social icons- responsive*/
+  .containersocial
+  {
+    position: fixed;
+    top: 10px;
+  }
+  .column
+  {
+    flex: 50%;
+    max-width: 50%;
+  }
+/*Footer-responsive*/
+  .footer
+{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.672);
+  text-align: left;
+  width: 200px;
+  font-size: 15px;
+  color: #E97A69;
+  left: 5px;
+  right: 500px;
+  bottom: 0;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+}
+@media screen and (max-width:600px)
+{
+  .column
+  {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
