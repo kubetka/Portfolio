@@ -72,11 +72,12 @@ nav ul li a:hover
 /*Column 1: Text*/
 .col-1
 {
-  flex-basis: 40%;
-  position: relative;
-  margin-left: 50px;
   align-items: center;
+  flex-basis: 50%;
+  position: relative;
   text-align: center;
+  margin-left: 50px;
+  z-index: 1;
 }
 .col-1 .logo
 {
@@ -86,6 +87,7 @@ nav ul li a:hover
 .col-1 .line
 {
   width: 80%;
+  top: 0;
 }
 .col-1 h1,h2
 {
@@ -100,26 +102,23 @@ nav ul li a:hover
 .col-2
 {
   position: relative;
-  padding-left: 20vh;
-  flex-basis: 60%;
+  flex-basis: 50%;
   display: flex;
   text-align: center;
 }
 .col-2 .me
 {
-  width:75%;
-  height: auto;
-  top: 0;
+  width: 75%;
+  height: 80%;
 }
 .col-2 .squares
 {
   position: absolute;
-  top: 0;
   width: 70%;
   height: 105%;
   z-index: -1;
   animation-name: opacity;
-  animation-duration: 5s;
+  animation-duration: 10s;
 }
 /*Animations*/
 @keyframes opacity
@@ -197,12 +196,12 @@ button
   /*Responsive navigation*/
   nav ul
   {
-    width: 50%;
-    height: 120%;
+    width: 90%;
+    height: 100%;
     background-color: #e97a6990;
     position: fixed;
     top: 40px;
-    z-index: -3;
+    z-index: 5;
   }
   nav ul li
   {
@@ -271,7 +270,7 @@ button
   .column
   {
     flex: 50%;
-    max-width: 50%;
+    max-width: 40%;
   }
 /*Footer-responsive*/
   .footer
