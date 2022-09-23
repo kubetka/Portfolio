@@ -2,4 +2,8 @@
 from = “/*”
 to = “/index.html”
 status = 200
-base="Portfolio-website/"
+[build]
+base="Portfolio/"
+publish="build-output/"
+command="echo 'default context'"
+[context.deploy-preview]
