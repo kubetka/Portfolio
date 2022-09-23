@@ -197,11 +197,10 @@ button
   nav ul
   {
     width: 90%;
-    height: 100%;
+    height: 110%;
     background-color: #e97a6990;
     position: fixed;
     top: 40px;
-    z-index: 5;
   }
   nav ul li
   {
@@ -212,6 +211,7 @@ button
   nav ul li a
   {
     color: black;
+    font-size: 25px;
   }
   .menu-icon
   {
@@ -225,6 +225,7 @@ button
   {
     overflow: hidden;
     transition: 0.5s;
+    z-index: 5;
   }
   .rowmain
   {
@@ -237,7 +238,12 @@ button
     text-align: center;
     flex-basis: 100%;
     padding-bottom: 100px;
-  }  
+    z-index: 1;
+  } 
+  .col-1 .logo
+  {
+    z-index: 1;
+  } 
   .col-1 .line
   {
     width: 80%;
