@@ -201,20 +201,19 @@ button
     background-color: #e97a6990;
     position: fixed;
     top: 40px;
-    z-index: 5;
   }
   nav ul li
   {
     display: block;
     margin-top: 0.4vh;
     margin-bottom: 0px;
-    z-index: 5;
+    z-index: 2;
   }
   nav ul li a
   {
     color: black;
     font-size: 25px;
-    z-index: 5;
+    z-index: 2;
   }
   .menu-icon
   {
@@ -228,12 +227,13 @@ button
   {
     overflow: hidden;
     transition: 0.5s;
-    z-index: 5;
+    z-index: 2;
   }
   .rowmain
   {
     flex-direction: column;
     margin: 50px 0;
+    z-index: -2;
   }
   /*Column 1- responsive*/
   .col-1
@@ -241,6 +241,7 @@ button
     text-align: center;
     flex-basis: 100%;
     padding-bottom: 100px;
+    z-index: -2;
   }
   .col-1 .line
   {
