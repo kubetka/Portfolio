@@ -201,17 +201,20 @@ button
     background-color: #e97a6990;
     position: fixed;
     top: 40px;
+    z-index: 5;
   }
   nav ul li
   {
     display: block;
     margin-top: 0.4vh;
     margin-bottom: 0px;
+    z-index: 5;
   }
   nav ul li a
   {
     color: black;
     font-size: 25px;
+    z-index: 5;
   }
   .menu-icon
   {
