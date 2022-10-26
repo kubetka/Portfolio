@@ -238,12 +238,7 @@ button
     text-align: center;
     flex-basis: 100%;
     padding-bottom: 100px;
-    z-index: 1;
-  } 
-  .col-1 .logo
-  {
-    z-index: 1;
-  } 
+  }
   .col-1 .line
   {
     width: 80%;
