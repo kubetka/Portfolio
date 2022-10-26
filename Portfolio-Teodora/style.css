@@ -9,7 +9,8 @@ html
 }
 /*Navigation*/
 .navbar
-  height: 30px;
+{
+  height: 30px;;
   width: 70%;
   display: flex;
   align-items: center;
