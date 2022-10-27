@@ -44,6 +44,7 @@
         <img src="images teodora/Web Designs/swiss.jpg">
     </div>
   </div>
+  <button onclick="topfunction()" id="mybtn" title="goto top">Back to top</button>
   <script>
     var menulist= document.getElementById("menulist");
     menulist.style.maxHeight="0px";
@@ -57,6 +58,23 @@
               {
                   menulist.style.maxHeight="0px";
               }
+    }
+    let mybutton= document.getElementById("mybtn");
+    window.onscroll=function() {scrollFunction()};
+    function scrollFunction()
+    {
+      if (document.body.scrollTop>20 || document.documentElement.scrollTop>20)
+      {
+        mybutton.style.display="block";
+      } else
+      {
+        mybutton.style.display="none";
+      }
+    }
+    function topfunction()
+    {
+      document.body.scrollTop=0;
+      document.documentElement.scrollTop=0;
     }
 </script>
   </main>
