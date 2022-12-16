@@ -357,11 +357,6 @@ figcaption
     position: fixed;
     top: 10px;
   }
-  .column
-  {
-    flex: 50%;
-    max-width: 40%;
-  }
 /*Footer-responsive*/
   .footer
 {
