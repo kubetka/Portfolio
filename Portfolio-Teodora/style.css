@@ -7,6 +7,7 @@ html
   width: 100%;
   min-width: 100vh;
 }
+
 /*Navigation*/
 .navbar
 {
@@ -32,15 +33,30 @@ nav ul li a
   text-decoration: none;
   color: #E97A69;
   font-size: 20px;
-  padding-left: 2vh;
-  padding-right: 2vh;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  padding-bottom: 10px;
   top: 0;
-  font-family:'Courier New', Courier, monospace;
+ font-family:'Special Elite',cursive;
 }
 nav ul li a:hover
 {
   text-decoration: underline;
   color: #E97A69;
+}
+/*Responsive menu icon- button*/
+#mybtn
+{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 5;
+  border: none;
+}
+#mybtn:hover
+{
+  cursor: pointer;
 }
 .menu-icon
 {
@@ -49,21 +65,31 @@ nav ul li a:hover
   width: auto;
   display: none;
 }
-/*Footer*/
-.footer
+
+/*Social media icons*/
+.insta
 {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.672);
-  text-align: left;
-  width: 50%;
-  font-size: 15px;
-  color: #E97A69;
-  left: 0.2vh;
-  right: 26vh;
-  bottom: 0;
-  text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
+  height: 30px;
+  width: 30px;
 }
+.facebook
+{
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+}
+.containersocial
+{
+  height: 30px;
+  width: 90px;
+  float: right;
+  position: fixed;
+  right: 0;
+  top: 20px;
+}
+
+
+/*Home page images*/
 .rowmain
 {
   display: flex;
@@ -122,6 +148,7 @@ nav ul li a:hover
   animation-name: opacity;
   animation-duration: 10s;
 }
+
 /*Animations*/
 @keyframes opacity
 {
@@ -134,27 +161,7 @@ nav ul li a:hover
   from {opacity: 0%;}
   to {opacity: 100%;}
 }
-/*Social icons*/
-.insta
-{
-  height: 30px;
-  width: 30px;
-}
-.facebook
-{
-  height: 30px;
-  width: 30px;
-  margin-right: 20px;
-}
-.containersocial
-{
-  height: 30px;
-  width: 90px;
-  float: right;
-  position: fixed;
-  right: 0;
-  top: 20px;
-}
+
 /*Buttons*/
 button
 {
@@ -170,6 +177,29 @@ button
 {
   background-color: rgba(0, 0, 0, 0.396);
   transform: scale(1.05);
+}
+
+/*Filters*/
+.navfilters
+{
+  padding-top: 100px;
+  padding-left: 30px;
+}
+.navfilters a
+{
+  color: #E97A69;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 1px solid #E97A69;
+  margin-left: 30px;
+  padding: 10px;
+  font-family:'Special Elite',cursive;
+}
+.navfilters a:hover
+{
+  background-color: #E97A69;
+  color: black;
 }
 /*Gallery*/
 .row
@@ -192,32 +222,45 @@ button
   vertical-align: middle;
   width: 100%;
 }
-#mybtn
+
+/*Captions*/
+figcaption
 {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 5;
-  background-color: #E97A69;
-  border-radius: 10px;
-  font-size: 18px;
   color: black;
-  font-family:'Courier New', Courier, monospace;
+  background-color:#E97A69;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-family:'Special Elite',cursive;
 }
-#mybtn:hover
+
+/*Footer*/
+.footer
 {
-  cursor: pointer;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.672);
+  text-align: left;
+  width: 60%;
+  font-size: 15px;
+  color: #E97A69;
+  left: 0.2vh;
+  right: 26vh;
+  bottom: 0;
+  text-decoration: none;
+  font-family:'Special Elite',cursive;
 }
+
 /*Responsive version*/
 @media screen and (max-width:900px)
 {
   /*Responsive navigation*/
   nav ul
   {
-    width: 90%;
+    width: 80%;
     height: 40%;
     background-color: #e97a6990;
+    border-radius: 30px;
     position: fixed;
     top: 40px;
   }
@@ -227,11 +270,12 @@ button
     margin-top: 0.4vh;
     margin-bottom: 0px;
     z-index: 2;
+    padding-top: 20px;
   }
   nav ul li a
   {
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     z-index: 2;
   }
   .menu-icon
@@ -239,7 +283,7 @@ button
     display: block;
     cursor: pointer;
     position: fixed;
-    width: 40px;
+    width: 30px;
     height: auto;
   }
   #menulist
@@ -248,6 +292,24 @@ button
     transition: 0.5s;
     z-index: 2;
   }
+  .navfilters
+  {
+    padding-top: 100px;
+    padding-left: 30px;
+  }
+  .navfilters a
+  {
+    color: #E97A69;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid #E97A69;
+    margin-left: 10px;
+    padding: 10px;
+    line-height: 60px;
+    font-family:'Special Elite',cursive;
+  }
+}
   .rowmain
   {
     flex-direction: column;
@@ -266,9 +328,13 @@ button
   {
     width: 80%;
   }
+  .col-1 .logo
+  {
+    width: 15%;
+  }
   .col-1 h1,h2
   {
-    font-size: 40px;
+    font-size: 36px;
   }
   /*Column 2- responsive*/
   .col-2
@@ -303,14 +369,16 @@ button
   background-color: rgba(0, 0, 0, 0.672);
   text-align: left;
   width: 200px;
+  height: 80px;
   font-size: 15px;
   color: #E97A69;
   left: 5px;
   right: 500px;
   bottom: 0;
   text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
-}
+  font-family:'Special Elite',cursive;
+  padding-top: 10px;
+  line-height: 20px;
 }
 @media screen and (max-width:600px)
 {
