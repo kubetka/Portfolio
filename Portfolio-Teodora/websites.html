@@ -8,6 +8,8 @@
   <link rel="shortcut icon" type="image/ico" href="images teodora/favicon.ico">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Whisper">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <style> @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); </style>
 </head>
 <body>
   <header>
@@ -17,8 +19,7 @@
           <li><a href="index.html">HOME</a></li>
           <li><a href="images teodora/Teodora todorova cv.pdf" download="Teodora_Todorova_CV"target="_blank" rel="noopener noreferrer">CV</a></li>
           <li><a href="paintings.html">PAINTINGS</a></li>
-          <li><a href="digital.html">DIGITAL</a></li>
-          <li><a href="webdesign.html">DESIGN</a></li>
+          <li><a href="graphicdesign.html">DESIGN</a></li>
         </ul>
         </nav>
     <img src="images teodora/Vector.png" class="menu-icon" onclick="togglemenu()">
@@ -30,26 +31,28 @@
     </div>
 </header>
   <main>
-  <div class="row">
-    <div class="column">
-        <img src="images teodora/Web Designs/bonewhite.jpg">
-        <img src="images teodora/Web Designs/Screenshot 2020-02-18 at 19.29.51.png">
-      </div>
-    <div class="column">
-        <img src="images teodora/Web Designs/Brown.jpg">
-        <img src="images teodora/Web Designs/Small paper bag.jpg">
+    <div class="navfilters">
+      <a href="graphicdesign.html">Graphic design</a>
+      <a href="websites.html">Websites</a>
+      <a href="posters.html">Posters</a>
     </div>
-    <div class="column">
-        <img src="images teodora/Web Designs/Red.jpg">
-        <img src="images teodora/Web Designs/Untitled-1.jpg">
-        <img src="images teodora/Web Designs/Box.jpg">
+    <div class="row">
+        <div class="column">
+            <img src="images teodora/Web Designs/Websites/swiss.jpg">
+        </div>
+        <div class="column">
+            <img src="images teodora/Web Designs/Websites/bonewhite.jpg">
+        </div>
+        <div class="column">
+            <img src="images teodora/Web Designs/Websites/Brown.jpg">
+            <img src="images teodora/Web Designs/Websites/White.jpg">
+        </div>
+        <div class="column">
+            <img src="images teodora/Web Designs/Websites/Red.jpg">
+        </div>
     </div>
-    <div class="column">
-        <img src="images teodora/Web Designs/swiss.jpg">
-        <img src="images teodora/Web Designs/Screenshot_20221115-121119_Instagram.jpg">
-    </div>
-  </div>
-  <button onclick="topfunction()" id="mybtn" title="goto top">Back to top</button>
+    <button onclick="topfunction()" id="mybtn" title="goto top"><img src="images teodora/arrow-1.png" width="50px"></button>
+  </main>
   <script>
     var menulist= document.getElementById("menulist");
     menulist.style.maxHeight="0px";
@@ -82,7 +85,6 @@
       document.documentElement.scrollTop=0;
     }
 </script>
-  </main>
   <footer>
     <div class="footer">
     <p1>Teodora P. Todorova<br>dianatedi@gmail.com<br>Mobile: 0882750843</p1>
