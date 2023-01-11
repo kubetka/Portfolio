@@ -218,21 +218,26 @@ button
 }
 .column img
 {
-  margin-top: 8px;
+  margin-top: 20px;
+  margin-bottom: 25px;
   vertical-align: middle;
   width: 100%;
+  border: 17px solid white;
+  padding: 0px 0px 30px 0px;
+  background-color: white;
+  width: 80%;
 }
 
 /*Captions*/
 figcaption
 {
-  color: black;
-  background-color:#E97A69;
-  padding-top: 10px;
+  color: red;
   padding-bottom: 10px;
-  font-size: 15px;
-  text-align: center;
+  padding-left: 10px;
+  font-size: 10px;
+  text-align: left;
   font-family:'Special Elite',cursive;
+  width: 5px;
 }
 
 /*Footer*/
@@ -357,6 +362,7 @@ figcaption
     position: fixed;
     top: 10px;
   }
+
 /*Footer-responsive*/
   .footer
 {
