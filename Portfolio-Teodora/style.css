@@ -11,6 +11,16 @@ html
   min-width: 100%;
   min-height: 100%;
   z-index: -40;
+  display: inline;
+}
+#backgroundv
+{
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -40;
 }
 .containermain
 {
@@ -394,6 +404,25 @@ button
     position: fixed;
     top: 10px;
   }
+
+/*Footer-responsive*/
+  .footer
+{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.672);
+  text-align: left;
+  width: 200px;
+  height: 80px;
+  font-size: 15px;
+  color: #E97A69;
+  left: 5px;
+  right: 500px;
+  bottom: 0;
+  text-decoration: none;
+  font-family:'Special Elite',cursive;
+  padding-top: 10px;
+  line-height: 20px;
+}
 @media screen and (max-width:600px)
 {
   .column
