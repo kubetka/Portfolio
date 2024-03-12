@@ -17,9 +17,10 @@
       <nav> 
         <ul id="menulist"> 
           <li><a href="index.html">HOME</a></li>
-          <li><a href="images teodora/Teodora todorova cv.pdf" download="Teodora_Todorova_CV"target="_blank" rel="noopener noreferrer">CV</a></li>
+          <li><a href="images teodora/Teodora todorova cv.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
           <li><a href="paintings.html">PAINTINGS</a></li>
-          <li><a href="graphicdesign.html">DESIGN</a></li>
+          <li><a href="graphicdesign.html">GRAPHIC DESIGN</a></li>
+          <li><a href="websites.html">WEB DESIGN</a></li>
         </ul>
         </nav>
     <img src="images teodora/Vector.png" class="menu-icon" onclick="togglemenu()">
@@ -31,49 +32,27 @@
     </div>
 </header>
   <main>
-    <div class="navfilters">
-      <a href="paintings.html">All</a>
-      <a href="oilpaintings.html">Oil Paintings</a>
-      <a href="watercolors.html">Watercolors</a>
-      <a href="people.html">People</a>
-      <a href="digital.html">Digital</a>
-    </div>
-    
-
+    <video autoplay muted loop id="backgroundv">
+      <source src="images teodora/vid2.mp4" type="video/mp4">
+    </video>
   <div class="row">
-    <div class="column">
-      <img  src="images teodora/Oil paintings/boats2.jpg">
-      <img src="images teodora/Watercolor/cactus.jpg">
-      <img src="images teodora/Watercolor/dream.jpg">
-      <img src="images teodora/Oil paintings/vase2.jpg">
-      <img src="images teodora/Watercolor/boats1.jpg">
-      <img src="images teodora/Oil paintings/enchantress.jpg">
-      <img src="images teodora/Graphic/graphic portrait 20.22.30.jpg">
-      <img src="images teodora/Watercolor/mihail1.jpg">
-      <img src="images teodora/Oil paintings/vase1 14.28.49.jpg">
-      <img src="images teodora/Oil paintings/bottles 14.28.49.jpg">
-      <img src="images teodora/Oil paintings/vase6.jpg">
-      </div>
-      
       <div class="column">
         <img src="images teodora/Oil paintings/three paintings 14.28.49.jpeg">
         <img src="images teodora/Oil paintings/vase5 14.28.49.jpeg">
         <img src="images teodora/Watercolor/venice.jpg">
-        <img src="images teodora/Oil paintings/lilacs.jpg">
         <img src="images teodora/Oil paintings/city1 14.28.49.jpg">
-        <img src="images teodora/Graphic/birds ink.jpg">
         <img src="images teodora/Oil paintings/parfume vase 1 14.28.49.jpg">
         <img src="images teodora/Oil paintings/piano woman.jpg">
         <img src="images teodora/Oil paintings/belogradchik 14.28.49.jpg">
         <img src="images teodora/Oil paintings/boat 14.28.49.jpg">
         <img src="images teodora/Watercolor/woman1.jpg">
       </div>
+
       <div class="column">
         <img src="images teodora/Watercolor/self portrait.jpg">
         <img src="images teodora/Oil paintings/major monogram poker 14.28.49.jpg">
         <img src="images teodora/Watercolor/tabakov.jpg">
         <img src="images teodora/Oil paintings/vase4 14.28.49.jpg">
-        <img src="images teodora/Graphic/smokinglady grapgic.jpg">
         <img src="images teodora/Oil paintings/vase3 14.28.49.jpg">
         <img src="images teodora/Oil paintings/boris 14.28.49.jpg">
         <img src="images teodora/Oil paintings/city2 14.28.49.jpg">
@@ -81,18 +60,21 @@
         <img src="images teodora/Oil paintings/jin 14.28.49.jpg">
         <img src="images teodora/Watercolor/denko.jpg">
       </div>
+
       <div class="column">
         <img src="images teodora/Oil paintings/love.jpg">
         <img src="images teodora/Oil paintings/me.jpg">
         <img src="images teodora/Oil paintings/sea2 14.28.49.jpg">
         <img src="images teodora/Oil paintings/parfume vase 2 14.28.49.jpg">
         <img src="images teodora/Oil paintings/parfumevase3 14.28.49.jpg">
-        <img src="images teodora/Graphic/shell ink.jpg">
-        <img src="images teodora/Graphic/scull ink.jpg">
         <img src="images teodora/Oil paintings/sea1 14.28.49.jpg">
         <img src="images teodora/Oil paintings/newsea 14.28.49.jpg">
         <img src="images teodora/Oil paintings/kazanluck 14.28.49.jpg">
         <img src="images teodora/Oil paintings/mgk.jpg">
+      </div>
+
+      <div class="column">
+        <img src="images teodora/Oil paintings/enchantress.jpg">
       </div>
   </div>
   <button onclick="topfunction()" id="mybtn" title="goto top"><img src="images teodora/arrow-1.png" width="50px"></button>
@@ -104,7 +86,7 @@
     {
         if (menulist.style.maxHeight=="0px")
               {
-                  menulist.style.maxHeight="200px";
+                  menulist.style.maxHeight="240px";
               }
         else
               {
@@ -131,10 +113,5 @@
       document.documentElement.scrollTop=0;
     }
 </script>
-  <footer>
-    <div class="footer">
-    <p1>Teodora P. Todorova<br>dianatedi@gmail.com<br>Mobile: 0882750843</p1>
-    </div>
-  </footer>
 </body>
 </html>

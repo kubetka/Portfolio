@@ -1,6 +1,16 @@
 html
 {
   background-color: black;
+  display: inline;
+}
+#backgroundv
+{
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -40;
 }
 .containermain
 {
@@ -12,7 +22,9 @@ html
 .navbar
 {
   top: 3%;
+  left:0;
   width: 70%;
+  height: 50px;
   display: flex;
   align-items:center;
   position: fixed;
@@ -36,7 +48,6 @@ nav ul li a
   padding-left: 6vh;
   padding-right: 6vh;
   padding-bottom: 10px;
-  top: 0;
  font-family:'Special Elite',cursive;
 }
 nav ul li a:hover
@@ -101,6 +112,7 @@ nav ul li a:hover
 .col-1
 {
   align-items: center;
+  height: auto;
   flex-basis: 50%;
   position: relative;
   text-align: center;
@@ -109,6 +121,7 @@ nav ul li a:hover
 }
 .col-1 .logo
 {
+  margin-top: 0;
   width: 20%;
   padding-bottom: 20px;
 }
@@ -119,7 +132,7 @@ nav ul li a:hover
 }
 .col-1 h1,h2
 {
-  color: #E97A69;
+  color:#E97A69;
   font-size: 3vw;
   text-align: center;
   line-height: 0.1px;
@@ -136,19 +149,103 @@ nav ul li a:hover
 }
 .col-2 .me
 {
-  width: 75%;
-  height: 80%;
+  padding-top: 100px;
+  width: 65%;
+  height: 70%;
 }
 .col-2 .squares
 {
+  padding-top: 100px;
   position: absolute;
-  width: 70%;
-  height: 105%;
+  width: 60%;
+  height: 95%;
   z-index: -1;
   animation-name: opacity;
   animation-duration: 10s;
 }
+.col-2 .smoke-wrap
+{
+    position: absolute;
+    left: 41%;
+    transform: translateX(-50%);
+    top: -50%;
+    opacity: 75%;
+}
+.col-2 .smoke , .smoke2
+{
+  height: 500px;
+  padding-top: 0;
+  padding-right: -300px;
+}
+.col-2 .smoke , .smoke2 {
+  filter: blur(5px);
+  transform-origin: 50% 50%;
+}
+.col-2 .smoke{
+  animation: smoke1 5s linear infinite;
+  animation-delay: 0.5s;
+}
+.col-2 .smoke2 {
+  animation: smoke2 5s linear infinite;
+  animation-delay: 1.5s;
 
+}
+@keyframes smoke1 {
+  0% {
+    filter: blur(0px);
+    transform: translateY(0px) scale(-1, 1);
+    opacity: 0;
+  }
+  25% {
+    filter: blur(3px);
+    transform: translateY(-10px) scale(-1, 1.05);
+    opacity: 0.5;
+  }
+  50% {
+    filter: blur(5px);
+    transform: translateY(-20px) scale(-1, 1.1);
+    opacity: 1;
+  }
+  75%
+  {
+    filter: blur(5px);
+    transform: translateY(-30px) scale(-1, 1.15);
+    opacity: 0.5;
+  }
+  100% {
+    filter: blur(7px);
+    transform: translateY(-40px) scale(-1, 1.2);
+    opacity: 0;
+  }
+}
+@keyframes smoke2 {
+  0% {
+    filter: blur(0px);
+    transform: translateY(0px) scale(1);
+    opacity: 0;
+  }
+  25% {
+    filter: blur(3px);
+    transform: translateY(-10px) scale(1.05);
+    opacity: 0.5;
+  }
+  50% {
+    filter: blur(5px);
+    transform: translateY(-20px) scale(1.1);
+    opacity: 1;
+  }
+  75%
+  {
+    filter: blur(5px);
+    transform: translateY(-30px) scale(1.15);
+    opacity: 0.5;
+  }
+  100% {
+    filter: blur(7px);
+    transform: translateY(-40px) scale(1.2);
+    opacity: 0;
+  }
+}
 /*Animations*/
 @keyframes opacity
 {
@@ -178,35 +275,12 @@ button
   background-color: rgba(0, 0, 0, 0.396);
   transform: scale(1.05);
 }
-
-/*Filters*/
-.navfilters
-{
-  padding-top: 100px;
-  padding-left: 30px;
-}
-.navfilters a
-{
-  color: #E97A69;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 30px;
-  border: 1px solid #E97A69;
-  margin-left: 30px;
-  padding: 10px;
-  font-family:'Special Elite',cursive;
-}
-.navfilters a:hover
-{
-  background-color: #E97A69;
-  color: black;
-}
 /*Gallery*/
 .row
 {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0px;
+  margin-top: 50px;
 }
 .column 
 {
@@ -227,39 +301,15 @@ button
   background-color: white;
   width: 80%;
 }
-
-/*Captions*/
-figcaption
-{
-  color: red;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  font-size: 10px;
-  text-align: left;
-  font-family:'Special Elite',cursive;
-  width: 5px;
-}
-
-/*Footer*/
-.footer
-{
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.672);
-  text-align: left;
-  width: 60%;
-  font-size: 15px;
-  color: #E97A69;
-  left: 0.2vh;
-  right: 26vh;
-  bottom: 0;
-  text-decoration: none;
-  font-family:'Special Elite',cursive;
-}
-
 /*Responsive version*/
 @media screen and (max-width:900px)
 {
   /*Responsive navigation*/
+  .navbar
+  {
+    background-color: transparent;
+    left: 15px;
+  }
   nav ul
   {
     width: 80%;
@@ -297,24 +347,6 @@ figcaption
     transition: 0.5s;
     z-index: 2;
   }
-  .navfilters
-  {
-    padding-top: 100px;
-    padding-left: 30px;
-  }
-  .navfilters a
-  {
-    color: #E97A69;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 30px;
-    border: 1px solid #E97A69;
-    margin-left: 10px;
-    padding: 10px;
-    line-height: 60px;
-    font-family:'Special Elite',cursive;
-  }
-}
   .rowmain
   {
     flex-direction: column;
@@ -362,25 +394,6 @@ figcaption
     position: fixed;
     top: 10px;
   }
-
-/*Footer-responsive*/
-  .footer
-{
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.672);
-  text-align: left;
-  width: 200px;
-  height: 80px;
-  font-size: 15px;
-  color: #E97A69;
-  left: 5px;
-  right: 500px;
-  bottom: 0;
-  text-decoration: none;
-  font-family:'Special Elite',cursive;
-  padding-top: 10px;
-  line-height: 20px;
-}
 @media screen and (max-width:600px)
 {
   .column
