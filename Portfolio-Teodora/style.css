@@ -38,7 +38,6 @@ html
   display: flex;
   align-items:center;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.597);
 }
 nav
 {
@@ -58,7 +57,7 @@ nav ul li a
   padding-left: 6vh;
   padding-right: 6vh;
   padding-bottom: 10px;
- font-family:'Special Elite',cursive;
+ font-family:'Yatra One',cursive;
 }
 nav ul li a:hover
 {
@@ -132,22 +131,25 @@ nav ul li a:hover
 .col-1 .logo
 {
   margin-top: 0;
-  width: 20%;
-  padding-bottom: 20px;
+  width: 10%;
 }
-.col-1 .line
-{
-  width: 80%;
-  top: 0;
-}
-.col-1 h1,h2
+.col-1 h1
 {
   color:#E97A69;
-  font-size: 3vw;
+  font-size: 7vw;
   text-align: center;
   line-height: 0.1px;
-  font-family: "whisper", sans-serif;
+  font-family: 'Yatra One', sans-serif;
   font-weight: 100;
+}
+.col-1 h2{
+  font-size: 1vw;
+  color:#E97A69;
+  text-align: center;
+  line-height: 0.1px;
+  font-family: 'Yatra One', sans-serif;
+  font-weight: 100;
+  padding-bottom: 200px;
 }
 /*Column 2: Me*/
 .col-2
@@ -159,13 +161,13 @@ nav ul li a:hover
 }
 .col-2 .me
 {
-  padding-top: 100px;
+  padding-top: 70px;
   width: 65%;
   height: 70%;
 }
 .col-2 .squares
 {
-  padding-top: 100px;
+  padding-top: 80px;
   position: absolute;
   width: 60%;
   height: 95%;
@@ -273,7 +275,7 @@ nav ul li a:hover
 button
 {
   color: #E97A69;
-  font-family:  Whisper, serif;
+  font-family:  "Yatra one" , serif;
   font-size: 3vh;
   background-color: transparent;
   border: 1px solid #E97A69;
@@ -371,17 +373,17 @@ button
     padding-bottom: 100px;
     z-index: -2;
   }
-  .col-1 .line
-  {
-    width: 80%;
-  }
   .col-1 .logo
   {
     width: 15%;
   }
-  .col-1 h1,h2
+  .col-1 h1
   {
     font-size: 36px;
+  }
+  .col-1 h2
+  {
+    font-size: 15px;
   }
   /*Column 2- responsive*/
   .col-2
@@ -419,7 +421,7 @@ button
   right: 500px;
   bottom: 0;
   text-decoration: none;
-  font-family:'Special Elite',cursive;
+  font-family:'Yatra One',cursive;
   padding-top: 10px;
   line-height: 20px;
 }
