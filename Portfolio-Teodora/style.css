@@ -1,26 +1,7 @@
 html
 {
   background-color: black;
-  display: inline;
-}
-#backgroundv
-{
-  position: fixed;
-  left: 0;
-  top: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -40;
-  display: inline;
-}
-#backgroundv
-{
-  position: fixed;
-  left: 0;
-  top: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -40;
+  display: fixed;
 }
 .containermain
 {
@@ -57,7 +38,7 @@ nav ul li a
   padding-left: 6vh;
   padding-right: 6vh;
   padding-bottom: 10px;
- font-family:'Yatra One',cursive;
+ font-family:'Yatra One', cursive;
 }
 nav ul li a:hover
 {
@@ -390,17 +371,21 @@ button
   {
     flex-basis: 100%;
     text-align: center;
+    z-index: -1;
   }
   .col-2 .me
   {
     width: 77%;
+    z-index: -1;
   }
   .col-2 .squares
   {
     width: 72%;
+    z-index: -2;
   }
   .col-2 .smoke-wrap{
     top: -55%;
+    z-index: -1;
   }
   /*Social icons- responsive*/
   .containersocial
