@@ -294,8 +294,56 @@ button
   background-color: white;
   width: 80%;
 }
-/*Responsive version*/
-@media screen and (max-width:900px)
+/*Responsive version more than 900*/
+@media screen and (max-width:1250px){
+  .navbar
+  {
+    background-color: transparent;
+    left: 15px;
+  }
+  nav ul
+  {
+    width: 50%;
+    height: 40%;
+    background-color: #e97a6990;
+    border-radius: 30px;
+    position: fixed;
+    top: 40px;
+  }
+  nav ul li
+  {
+    display: block;
+    margin-top: 0.4vh;
+    margin-bottom: 0px;
+    z-index: 2;
+    padding-top: 20px;
+  }
+  nav ul li a
+  {
+    color: black;
+    font-size: 20px;
+    z-index: 2;
+  }
+  .menu-icon
+  {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    width: 30px;
+    height: auto;
+  }
+  #menulist
+  {
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  .col-1
+  {
+    z-index: -1;
+  }
+}
+  @media screen and (max-width:900px)
 {
   /*Responsive navigation*/
   .navbar
@@ -412,12 +460,148 @@ button
   padding-top: 10px;
   line-height: 20px;
 }
-@media screen and (max-width:600px)
-{
   .column
   {
     flex: 100%;
     max-width: 100%;
   }
 }
+@media screen and (max-width:880px)
+{
+.col-2 .smoke-wrap{
+  top: -40%;
+  left: 50%;
+}
+}
+@media screen and (max-width:800px)
+{
+.col-2 .smoke-wrap{
+  top: -45%;
+  left: 50%;
+}
+}
+
+/*Responsive version*/
+@media screen and (max-width:700px)
+{
+  /*Responsive navigation*/
+  .navbar
+  {
+    background-color: transparent;
+    left: 15px;
+  }
+  nav ul
+  {
+    width: 80%;
+    height: 40%;
+    background-color: #e97a6990;
+    border-radius: 30px;
+    position: fixed;
+    top: 40px;
+  }
+  nav ul li
+  {
+    display: block;
+    margin-top: 0.4vh;
+    margin-bottom: 0px;
+    z-index: 2;
+    padding-top: 20px;
+  }
+  nav ul li a
+  {
+    color: black;
+    font-size: 20px;
+    z-index: 2;
+  }
+  .menu-icon
+  {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    width: 30px;
+    height: auto;
+  }
+  #menulist
+  {
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  .rowmain
+  {
+    flex-direction: column;
+    margin: 50px 0;
+    z-index: -2;
+  }
+  /*Column 1- responsive*/
+  .col-1
+  {
+    text-align: center;
+    flex-basis: 100%;
+    z-index: -2;
+  }
+  .col-1 .logo
+  {
+    width: 15%;
+  }
+  .col-1 h1
+  {
+    font-size: 36px;
+  }
+  .col-1 h2
+  {
+    font-size: 15px;
+    padding-bottom: 0;
+  }
+  /*Column 2- responsive*/
+  .col-2
+  {
+    flex-basis: 100%;
+    text-align: center;
+    z-index: -1;
+  }
+  .col-2 .me
+  {
+    width: 77%;
+    z-index: -1;
+  }
+  .col-2 .squares
+  {
+    width: 72%;
+    z-index: -2;
+  }
+  .col-2 .smoke-wrap{
+    top: -55%;
+    z-index: -1;
+  }
+  /*Social icons- responsive*/
+  .containersocial
+  {
+    position: fixed;
+    top: 10px;
+  }
+
+/*Footer-responsive*/
+  .footer
+{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.672);
+  text-align: left;
+  width: 200px;
+  height: 80px;
+  font-size: 15px;
+  color: #E97A69;
+  left: 5px;
+  right: 500px;
+  bottom: 0;
+  text-decoration: none;
+  font-family:'Yatra One',cursive;
+  padding-top: 10px;
+  line-height: 20px;
+}
+  .column
+  {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
