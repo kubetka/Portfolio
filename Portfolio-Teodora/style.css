@@ -2,6 +2,8 @@ html
 {
   background-color: black;
   display: fixed;
+  overflow-x: hidden;
+
 }
 .containermain
 {
@@ -545,6 +547,8 @@ button
     text-align: center;
     flex-basis: 100%;
     z-index: -2;
+    margin-right: 0;
+    margin-left: 0;
   }
   .col-1 .logo
   {
