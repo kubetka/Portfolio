@@ -8,6 +8,11 @@ html
   width: 100%;
   min-width: 100vh;
 }
+h2{
+  font-size: 15px;
+  color: #E97A69;
+  text-align: center;
+}
 
 /*Navigation*/
 .navbar
